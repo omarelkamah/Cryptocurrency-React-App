@@ -1,0 +1,29 @@
+.coins {
+  .container {
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 798px) {
+      width: 100%;
+    }
+
+    .coinsTop {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #26272b;
+      box-shadow: 0px 0px 12px #18191b;
+      border-radius: 8px;
+      margin: 2rem 1rem;
+      padding: 0.7rem 1rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    @media (max-width: 798px) {
+      .hidden-mobile {
+        display: none;
+      }
+    }
+  }
+}

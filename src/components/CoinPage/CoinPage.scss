@@ -1,0 +1,113 @@
+.coinPage {
+  .container {
+    width: 60%;
+    margin: 1rem auto;
+    @media (max-width: 798px) {
+      width: 100%;
+    }
+    .content {
+      margin: 1rem auto;
+
+      padding: 0.7rem 1rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #26272b;
+      box-shadow: 0px 0px 12px #18191b;
+      border-radius: 8px;
+
+      .rank {
+        margin: 0.5 0;
+
+        .rank-btn {
+          border: 1px solid #6900ff;
+          box-shadow: 0px 0px 8px #6900ff;
+          background-color: #6900ff;
+          border-radius: 8px;
+          padding: 0.2rem;
+        }
+      }
+
+      .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 798px) {
+          flex-direction: column;
+        }
+
+        .coin-heading {
+          display: flex;
+          align-items: center;
+          margin: 1rem 0;
+
+          img {
+            margin-right: 5px;
+          }
+        }
+
+        .coin-price {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        p {
+          padding-right: 1rem;
+        }
+      }
+
+      table {
+        margin: 0.5rem 0;
+        td,
+        th {
+          padding: 8px;
+          text-align: center;
+        }
+
+        th {
+          background-color: #333;
+        }
+
+        .hidden-mobile {
+          display: none;
+        }
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 798px) {
+          flex-direction: column;
+        }
+
+        .row {
+          flex: 1;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #808080;
+          margin: 0.6rem 0;
+          padding-bottom: 0.5rem;
+
+          h4 {
+            margin-right: 5px;
+          }
+
+          p:first-child {
+            color: #d3d3d3;
+          }
+        }
+      }
+
+      .about {
+        p {
+          color: #bbb;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
